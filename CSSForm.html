@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        /* Selector in CSS
+        1) Element Selector-->p,h1,h2
+        2)Grouping Selectors-->h1,h2
+        3)class selector   -->.class name
+        4)Attribute Selector --> 
+        5)id Selector --> #
+        6) Pseudo Selector-->
+         */
+/* Priority Selectors 
+1) Id
+2)Class
+3)Element */
+h1,h2{
+    color:rgb(24, 29, 190);
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.Heading{
+    color:rgb(128, 0, 0) ;
+}
+.Shambavi{
+    color: rgb(255, 0, 221);
+}
+#BhagyaFontSize{
+    font-size: 40px;
+}
+body{
+    background-color:lavender;
+    background-image: url(pic.jpg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+</style>
+
+</head>
+<h1>Registeration Form</h1>
+<h2>Form Details</h2>
+<body>
+
+    <h1 class="Heading">How was Your work</h1>
+    <h2 class="Ranjita"> She is a dancer</h2>
+    <h3 class="Bhagya" id="BhagyaFontSize">4 Difference Between Methods and constructor</h3>
+    <form>
+        <div>
+        <lable>Enter first name</lable>
+        <input type="text" name="FirstName" placeholder="Enter First name" required minlength="4" maxlength="20">
+    </div>
+    <div>
+        <lable>Enter Last name</lable>
+        <input type="text" name="LastName" placeholder="Enter Last name">
+    </div>
+    <div>
+        <lable>Enter EmailId</lable>
+        <input type="email" name="email" placeholder="Enter email id">
+    </div>
+    <div>
+        <label>Enter Password</label>
+        <input type="password" name="password" placeholder="Enter Password">  <!--for password we should use password then password will be hide-->
+    </div>
+    <div>
+        <label>Select Gender</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <!--Name is used to select particular gender otherwise it will select by default all -->
+        <input type="radio" name="gender">Others
+    </div>
+    <!--Select city-->
+    <select>
+    <option>Banglore</option>
+    <option>Belagavi</option>
+    <option>Mysuru</option>
+    <option>Mandya</option>
+</select>
+<div>
+<!-- Date-->
+<label>date Of Birth</label>
+<input type="date" name="dateOfBirth">
+</div>
+<div> 
+    <lable>Mobile Number</lable>
+        <input type="text" name="PhoneNumber" placeholder="Phone Number">
+</div>
+
+<button type="Submit">Register</button>
+<button type="Reset">Reset</button>
+
+<!-- Select courses-->
+<div>
+    <label>Select courses </label>
+    <select>
+        <option>Java</option>
+        <option>HTML</option>
+        <option>Sql</option>
+    </select>     
+</div>
+
+
+<!-- Create new github Repository username.github.io -public --> 
+    </form>
+
+</body>
+</html>
